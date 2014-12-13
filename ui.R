@@ -9,6 +9,7 @@ shinyUI(fluidPage(
   sidebarLayout(
     sidebarPanel(
 	  h6("Please allow up to one minute for data to load."),
+	  h6("Change tabs, then try the two selectors."),
       selectInput("year",h5("Choose a year:"),
                   choices = c("2010-2011","2011-2012","2012-2013")),
       radioButtons("radio",h5("Select a ratio:"),
