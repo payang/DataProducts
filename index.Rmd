@@ -59,4 +59,14 @@ The Shiny package under R is used to manipulate the data and provide a visual ou
 
 Funds spent each year under the MNCH heading for each of the 10 countries identified as priorities are totalled.  The ratios indicate the dollar contribution for each element, eg. births means the yearly contribution in dollars divided by the number of live births that year.  Two ratios with ties to the three paths are proposed.
 
-No analysis of the data was conducted since the purpose of the project is to use the tools, Shiny and Slidify.
+No analysis of the data was conducted since the stated purpose of the project is to use the tools, Shiny and Slidify.
+
+The function tapply was used to obtain totals of MNCH funds spent per country.
+
+  tapply(df.2012.2013[[2]],INDEX=df.2012.2013[[1]],sum)
+
+Other calculations involved:
+- Calculating number of births (birth rate * population * adjustment)
+- Calculating number of maternal deaths (maternal mortality ratio * live births * adjustment)
+- Calculating funds per live birth (funds spent / births)
+- Calculating funds per maternal deaths (funds spent / maternal deaths)
