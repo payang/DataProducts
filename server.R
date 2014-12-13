@@ -115,8 +115,6 @@ shinyServer(function(input, output) {
   output$distPlot <- renderPlot({
     var.df <- paste("df.sum.",gsub("-",".",input$year),sep="")
     dt <- get(var.df)
-#    dt <- tapply(df[[2]],INDEX=df[[1]],sum)
-    
     bp <- barplot(dt,main=paste("Year: ",gsub("[.]","-",input$year),sep="")
 		,las=2,cex.axis=.75,cex.names=.75)
     mtext(side=1,"Country",line=4,cex=1.25)

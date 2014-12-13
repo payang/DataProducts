@@ -3,7 +3,7 @@ title       : Maternal, Newborn and Child Health
 subtitle    : Exploring open data with R, Shiny and Slidify
 author      : Patrick Yang
 job         : 
-framework   : io2012        # {io2012, html5slides, shower, dzslides, ...}
+framework   : revealjs        # {io2012, html5slides, shower, dzslides, ...}
 highlighter : highlight.js  # {highlight.js, prettify, highlight}
 hitheme     : tomorrow      # 
 widgets     : []            # {mathjax, quiz, bootstrap}
@@ -59,7 +59,13 @@ The Shiny package under R is used to manipulate the data and provide a visual ou
 
 Funds spent each year under the MNCH heading for each of the 10 countries identified as priorities are totalled.  The ratios indicate the dollar contribution for each element, eg. births means the yearly contribution in dollars divided by the number of live births that year.  Two ratios with ties to the three paths are proposed.
 
-No analysis of the data was conducted since the stated purpose of the project is to use the tools, Shiny and Slidify.  The function tapply was used to obtain totals of MNCH funds spent per country.
+No analysis of the data was conducted since the stated purpose of the project is to use the tools, Shiny and Slidify.
+
+--- .class #id 
+
+## Course project (Continued)
+
+The function tapply was used to obtain totals of MNCH funds spent per country.
 
   tapply(df.2012.2013[[2]],INDEX=df.2012.2013[[1]],sum)
 
