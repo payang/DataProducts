@@ -10,9 +10,9 @@ shinyUI(fluidPage(
     sidebarPanel(
 	  h6("Please allow up to one minute for data to load."),
 	  h6("Change tabs, then try the two selectors."),
-      selectInput("year",h5("Choose a year:"),
+      selectInput("year",h5("Choose a year (both MNCH and By ratio tabs):"),
                   choices = c("2010-2011","2011-2012","2012-2013")),
-      radioButtons("radio",h5("Select a ratio:"),
+      radioButtons("radio",h5("Select a ratio (By ratio tab only):"),
 		choices=c("Births","Maternal mortality")
 	  ),
 	  h6("Data sources:"),
