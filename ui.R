@@ -54,7 +54,13 @@ shinyUI(fluidPage(
 		tags$li("Mozambique"),
 		tags$li("Nigeria"),
 		tags$li("Sudan"),
-		tags$li("Tanzania")
+		tags$li("Tanzania"),
+		h4("Pitch:"),"http://payang.github.io/DataProducts",
+		h4("GitHub:"),"https://github.com/payang/DataProducts",
+		h4("References"),
+		"DFATD Canada. (2014). Maternal, Newborn and Child Health. Retrieved December 13, 2014, from http://www.international.gc.ca/development-developpement/priorities-priorites/mnch-smne/index.aspx?lang=eng",
+		tags$br(),
+		"The World Bank. (2014). Indicators - Data. Retrieved December 13, 2014, from http://data.worldbank.org/indicator"
 		),
     tabPanel("MNCH", plotOutput("distPlot")),
     tabPanel("By ratio", plotOutput("distPlot2")),
